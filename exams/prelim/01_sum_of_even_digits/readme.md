@@ -25,7 +25,7 @@ Example:
    - Conditionals
    - Loops
    - Type Casting
-4. Test your solution by running `python test.py`. The script will automatically check your implementation against 10 test cases.
+4. Test your solution by running `test.py`. The script will automatically check your implementation against 10 test cases.
 
 ## Hints
 
