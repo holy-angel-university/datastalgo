@@ -33,4 +33,4 @@ Example:
 
 1. Loop through each character in the string.
 2. Use a conditional statement to check if the character is a vowel (both lowercase and uppercase).
-3. Use a conditional statement to check if the character is a vowel (both lowercase and uppercase).
+3. Use a counter variable to keep track of the number of vowels.
