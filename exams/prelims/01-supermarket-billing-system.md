@@ -14,7 +14,7 @@ You are tasked with creating a simple supermarket billing system. The system sho
 3. **Apply Discounts**
     - If the total bill is greater than 100, apply a 1% discount.
     - If the total bill is greater than 200, apply a 2% discount.
-    - and so on... it should be incremental by 10% for every 100 increment in the total bill.
+    - and so on... it should be incremental by 1% for every 100 increment in the total bill.
 4. **Display Final Bill**
     - The system should display the final bill amount after applying any discounts.
 5. **Additional Features**
