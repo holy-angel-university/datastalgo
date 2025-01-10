@@ -10,10 +10,11 @@ You are tasked with creating a simple supermarket billing system. The system sho
     - The cashier should be able to input the name, quantity, and price of each item.
     - The system should store these items in a list of dictionaries.
 2. **Calculate Total Bill**
-    - The system should calculate the total bill by summing up the cost of all items ($quantity * price$).
+    - The system should calculate the total bill by summing up the cost of all items (`quantity * price`).
 3. **Apply Discounts**
-    - If the total bill is greater than $\$100$, apply a $10\%%$ discount.
-    - If the total bill is greater than $\$200$, apply a $20\%$ discount.
+    - If the total bill is greater than 100, apply a 1% discount.
+    - If the total bill is greater than 200, apply a 2% discount.
+    - and so on... it should be incremental by 10% for every 100 increment in the total bill.
 4. **Display Final Bill**
     - The system should display the final bill amount after applying any discounts.
 5. **Additional Features**
@@ -25,19 +26,24 @@ You are tasked with creating a simple supermarket billing system. The system sho
 Here is an example of the system's output:
 
 ```
-Enter item name: Apple
-Enter quantity: 5
-Enter price per item: 1.5
-Do you want to add more items? (yes/no): yes
-
-Enter item name: Bread
-Enter quantity: 2
-Enter price per item: 3.0
+Enter item name: Banana
+Enter quantity: e
+ERROR! Quantity must be a valid integer.
+Enter quantity: -5
+ERROR! Quantity must be a positive integer.
+Enter quantity: 10
+Enter price per item: $abc
+ERROR! Price must be a valid number.
+Enter price per item: $-2
+ERROR! Price must be a positive number.
+Enter price per item: $0.5
+Do you want to add more items? (yes/no): maybe
+ERROR! Please enter 'yes' or 'no'.
 Do you want to add more items? (yes/no): no
 
-Total Bill: $13.5
-Discount Applied: 10%
-Final Amount to be Paid: $12.15
+Total Bill: $5.00
+Discount Applied: 0%
+Final Amount to be Paid: $5.00
 ```
 
 ## Your Task
