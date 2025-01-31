@@ -94,10 +94,3 @@ Enter your choice: 5
 
 Thank you for using the Banking System!
 ```
-
-## Bonus Challenges
-
-1. Add a feature to display all accounts and their balances.
-2. Implement a password system for account access.
-3. Allow users to transfer money between accounts.
-4. Save account data to a file and load it when the program starts.
