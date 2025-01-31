@@ -78,10 +78,3 @@ Recommendations for Office Operations:
 What would you like to do? (input/analyze/optimize/recommend/exit): exit
 Thank you for using the Environmental Impact Analysis and Optimization System!
 ```
-
-## Bonus Challenges
-
-1. Add a feature to visualize environmental impact using graphs (e.g., using `matplotlib`).
-2. Implement a feature to track progress over time and compare it with sustainability goals.
-3. Allow users to calculate the environmental impact of specific actions (e.g., switching to electric vehicles).
-4. Save environmental data and recommendations to a file and load it when the program starts.
