@@ -78,10 +78,3 @@ Best-Selling Product: Laptop (ID: 101) - 2 sold
 What would you like to do? (add/record/view/revenue/analyze/exit): exit
 Thank you for using the Real-Time Sales Tracking System!
 ```
-
-## Bonus Challenges
-
-1. Add a feature to delete products from the inventory.
-2. Allow users to update product details (e.g., price, quantity).
-3. Implement a search feature to find products by ID or name.
-4. Save product and sales data to a file and load it when the program starts.
