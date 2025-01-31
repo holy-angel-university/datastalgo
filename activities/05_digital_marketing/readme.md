@@ -113,10 +113,3 @@ Enter your choice: 5
 
 Thank you for using the Digital Marketing Business App!
 ```
-
-## Bonus Challenges
-
-1. Add a feature to calculate and display the click-through rate (CTR) and conversion rate for campaigns.
-2. Allow users to delete clients or campaigns.
-3. Implement a search feature to find clients or campaigns by ID or name.
-4. Implement a search feature to find clients or campaigns by ID or name.
