@@ -83,10 +83,3 @@ Flight Report:
 What would you like to do? (add/book/view/report/exit): exit
 Thank you for using the Airlines Management System!
 ```
-
-## Bonus Challenges
-
-1. Add a feature to cancel bookings and update seat availability.
-2. Implement a pricing system based on seat class (e.g., economy, business).
-3. Allow users to search for flights by destination.
-4. Save flight and passenger data to a file and load it when the program starts.
