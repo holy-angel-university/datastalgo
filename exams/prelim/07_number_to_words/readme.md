@@ -1,6 +1,6 @@
 # Number to Words
 
-###### General instructions for all special exams can be found [here](../special-exam.md).
+###### General instructions for all special exams can be found [here](../prelim.md).
 
 Write a Python function `number_to_words(num)` that takes an integer `num` (where `0 <= num <= 999,999,999`) as input and returns the English words representation of the number following specific formatting rules.
 
