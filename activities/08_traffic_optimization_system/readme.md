@@ -84,10 +84,3 @@ Traffic Report for Intersection 1:
 What would you like to do? (input/analyze/optimize/report/exit): exit
 Thank you for using the Traffic Optimization System!
 ```
-
-## Bonus Challenges
-
-1. Add a feature to visualize traffic patterns using graphs (e.g., using `matplotlib`).
-2. Implement a feature to predict future traffic patterns based on historical data.
-3. Allow users to compare traffic patterns and optimized timings across multiple intersections.
-4. Save traffic data and optimized timings to a file and load it when the program starts.
