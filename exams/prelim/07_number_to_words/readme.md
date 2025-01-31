@@ -1,45 +1,47 @@
 # Number to Words
 
-###### General instructions for all prelim exams can be found [here](../prelim.md).
+###### General instructions for all special exams can be found [here](../special-exam.md).
 
-Write a Python `function number_to_words(num)` that takes an integer `num` (where `0 <= num <= 9999`) as input and returns the English words representation of the number. The function should return the words in the following format:
+Write a Python function `number_to_words(num)` that takes an integer `num` (where `0 <= num <= 999,999,999`) as input and returns the English words representation of the number following specific formatting rules.
 
-- For numbers less than 20, return the word directly (e.g., `5` → `"five"`).
-- For numbers between 20 and 99, return the word in the format `"twenty-five"`.
-- For numbers between 100 and 999, return the word in the format `"one hundred twenty-five"`.
-- For numbers between 1000 and 9999, return the word in the format `"one thousand two hundred thirty-four"`.
+## Formatting Rules
 
-If the input number is `0`, return `"zero"`.
+- **Numbers less than 20**: Return the word directly (e.g., `5` → `"five"`).
+- **Numbers between 20 and 99**: Return the word in the format `"twenty-five"`.
+- **Numbers between 100 and 999**:
+  - If the number is exactly a multiple of 100 (e.g., 200, 500), return `"two hundred"`.
+  - Otherwise, include an `"and"` between the hundreds and the tens/units parts (e.g., `123` → `"one hundred and twenty-three"`, `105` → `"one hundred and five"`).
+- **Numbers between 1,000 and 999,999**:
+  - Break into thousands and remainder. Thousands part follows rules for numbers <1000, followed by `"thousand"`.
+  - Append remainder if non-zero. Use "and" only if remainder is <100 (e.g., `2001` → `"two thousand and one"`, `1234` → `"one thousand two hundred and thirty-four"`).
+- **Numbers between 1,000,000 and 999,999,999**:
+  - Break into millions, thousands, and remainder. Millions part follows rules for numbers <1000, followed by `"million"`.
+  - Thousands part follows rules, followed by `"thousand"`.
+  - Append remainder if non-zero. Use "and" appropriately between parts where necessary.
+- **Zero**: Return `"zero"`.
 
-Example:
+## Examples
 
 > Input: `123`  
->Output: `"one hundred twenty-three"`
+> Output: `"one hundred and twenty-three"`
 
-> Input: `1000`  
-> Output: `"one thousand"`
+> Input: `2001`  
+> Output: `"two thousand and one"`
 
-> Input: `9999`
-> Output: `"nine thousand nine hundred ninety-nine"`
+> Input: `123456789`  
+> Output: `"one hundred and twenty-three million four hundred and fifty-six thousand seven hundred and eighty-nine"`
 
 ## Instructions
 
-1. Implement the function `number_to_words(num)` in the file `solution.py`.
-2. Do not use any external libraries or advanced Python features (e.g., dictionaries, list comprehensions, etc.).
-3. Use only the following Python concepts:
-   - Variables and Data Types
-   - Conditionals
-   - Loops
-   - Type Casting
-4. Test your solution by running `test.py`. The script will automatically check your implementation against 10 test cases.
+1. Implement `number_to_words(num)` in `solution.py`.
+2. **Do not use any external libraries, dictionaries, or lists.**
+3. Use only:
+   - Variables, Conditionals, Loops, Type Casting.
+4. Ensure correct hyphens, spaces, and "and" usage.
+5. Test via `test.py`.
 
 ## Hints
 
-1. Break the problem into smaller parts:
-    - Handle numbers less than 20.
-    - Handle numbers between 20 and 99.
-    - Handle numbers between 100 and 999.
-    - Handle numbers between 1000 and 9999.
-2. Use conditionals to determine the range of the number.
-3. Use loops and type casting to extract digits and construct the word representation.
-4. Pay attention to edge cases, such as `0` and numbers with trailing zeros (e.g., `100`, `1000`).
+- Decompose the number into millions, thousands, and hundreds.
+- Use helper logic for repeated patterns (e.g., converting three-digit segments).
+- Thoroughly test edge cases (e.g., numbers with zeros between non-zero digits).

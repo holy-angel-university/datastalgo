@@ -1,40 +1,35 @@
 from solution import number_to_words
 
-
 def test_number_to_words():
     test_cases = [
-        (0, "zero"),  # Edge case: zero
-        (5, "five"),  # Single-digit number
-        (12, "twelve"),  # Number in the teens
-        (123, "one hundred twenty-three"),  # Number with hundreds, tens, and units
-        (1000, "one thousand"),  # Number with a thousands place
-        (
-            1234,
-            "one thousand two hundred thirty-four",
-        ),  # Number with thousands, hundreds, tens, and units
-        (9999, "nine thousand nine hundred ninety-nine"),  # Largest 4-digit number
-        (1111, "one thousand one hundred eleven"),  # All digits are the same
-        (
-            2000,
-            "two thousand",
-        ),  # Number with zeros in the hundreds, tens, and units places
-        (999, "nine hundred ninety-nine"),  # Largest 3-digit number
+        (0, "zero"),
+        (5, "five"),
+        (21, "twenty-one"),
+        (105, "one hundred and five"),
+        (123, "one hundred and twenty-three"),
+        (2001, "two thousand and one"),
+        (1000, "one thousand"),
+        (100500, "one hundred thousand five hundred"),
+        (123456789, "one hundred and twenty-three million four hundred and fifty-six thousand seven hundred and eighty-nine"),
+        (200000001, "two hundred million and one"),
+        (1000000, "one million"),
+        (205000, "two hundred and five thousand"),
+        (100100, "one hundred thousand one hundred"),
+        (999999999, "nine hundred and ninety-nine million nine hundred and ninety-nine thousand nine hundred and ninety-nine")
     ]
 
     total_points = 0
+    max_points = len(test_cases) * 10
 
-    for i, (input_num, expected_output) in enumerate(test_cases):
+    for i, (input_num, expected) in enumerate(test_cases):
         result = number_to_words(input_num)
-        if result == expected_output:
-            print(f"Test case {i + 1} passed!")
+        if result == expected:
+            print(f"Test case {i+1} passed!")
             total_points += 10
         else:
-            print(
-                f"Test case {i + 1} failed. Expected '{expected_output}', got '{result}'."
-            )
+            print(f"Test case {i+1} failed. Expected: '{expected}', Got: '{result}'")
 
-    print(f"\nTotal points: {total_points} / 100")
-
+    print(f"\nTotal points: {total_points}/{max_points}")
 
 if __name__ == "__main__":
     test_number_to_words()
