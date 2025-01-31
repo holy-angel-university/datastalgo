@@ -102,10 +102,3 @@ Enter your choice: 5
 
 Thank you for using the Social Media App!
 ```
-
-## Bonus Challenges
-
-1. Add a feature to allow users to follow other users and view their feeds.
-2. Implement a "like" system for posts.
-3. Allow users to delete their posts.
-4. Save user data to a file and load it when the program starts.
