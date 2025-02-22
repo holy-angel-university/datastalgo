@@ -28,7 +28,7 @@ the CRUD principles.
 ## Instructions
 
 1. You only have two (2) hours to complete the task.
-2. Each group consist only 2 members. Each group will present their work to the class.
+2. Each group consist only 2 members. Each group will present their work.
 3. Commit your work to your GitHub repository, publicly.
 4. Submit your repository link to this **[link](https://docs.google.com/spreadsheets/d/1ctOYIgukdJZTlD2uVBPJ5FRpk5KxfqoZlptOrThXNyk/edit?usp=sharing)** once you're done.
 
